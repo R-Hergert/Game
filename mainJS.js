@@ -2,7 +2,7 @@ var statPoints = 0,
   xp = 0,
   vertical = 10,
   horizontal = 0,
-  gold = 0,
+  gold = 10000,
   healthLost = 0,
   xpreq = 0,
   level = 0,
@@ -34,8 +34,8 @@ add("healingPotion")
 document.getElementById("healingPotion").innerHTML = "Health Potion"
   //--------------Story Info-----------------
 var buttontext = ["left", "up", "right", "down", "shop", "interact"];
-var combatbuttontext = ["attack", "run"];
-var shopbuttontext = ["healthPotion", "sword", "strength", "dexterity", "constitution", "intelligence", "charisma", "price"]
+var combatbuttontext = ["attack"];
+var shopbuttontext = ["healthPotion", "strength", "dexterity", "constitution", "intelligence", "charisma", "price", "cancel", "sword"]
 
 var wolf = new enemy(1, 2, 0, 15, 10, 10, 30);
 var wolf2 = new enemy(1, 4, 10, 15, 20, 15, 25)
@@ -253,9 +253,6 @@ function doSomething(button){
   else if (button === "attack"){
     attack()
   }
-  else if (button === "run"){
-    run()
-  }
   else if (button === "healingPotion"){
     healingPotion()
   }
@@ -385,15 +382,6 @@ function attack(){
   enemyHealth -= damage
   }
   interphaseI(send)
-}
-
-function runaway(){
-  if (Math.floor(Math.random()*100+1)> 30) {
-    getAway()
-  }
-  else {
-  InterphaseI("You failed to run away")
-  }
 }
 
 function ability(button) {
@@ -539,7 +527,8 @@ function shop() {
   for (var value of shopbuttontext){
     add(value)
   }
-  document.getElementById("sword").innerHTML = swordMessages[swordMessageNumber] +  "<br>"+ Math.floor((swordPrice/100)*(100-discount)) + "GP"
+  if (shopbuttontext.length>8){
+  document.getElementById("sword").innerHTML = swordMessages[swordMessageNumber] +  "<br>"+ Math.floor((swordPrice/100)*(100-discount)) + "GP"}
   document.getElementById("healthPotion").innerHTML = "health potion<br>" + Math.floor((30/100)*(100-discount)) + "GP"
   document.getElementById("strength").innerHTML = "strength training"
   document.getElementById("dexterity").innerHTML = "dexterity training"
@@ -558,7 +547,8 @@ function buy(button) {
     message("You got a better sword!")
     swordMessageNumber++
     if (swordMessageNumber === 11){
-      shopbuttontext[1] = ""
+      remove("sword")
+      shopbuttontext.pop()
     }
     }
     else {
