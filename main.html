@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" type="text/css" href="mainCSS.css">
+</head>
+<body>
+<div id="main">
+  <p id="title">The Game</p>
+  <div id="textBox"></div>
+  <p id="message1" class="message"></p>
+  <p id="message2" class="message"></p>
+  <p id="message3" class="message"></p>
+  <p id="message4" class="message"></p>
+  <div id="inventory" class="sidebars">
+    <p id="inventoryTitle"> Inventory </p>
+    <p id="level"></p><div id="levelTitle">Level:</div></p>
+    <p id="xp"></p>
+    <p id="gold"></p>
+    <p id="health"></p>
+    <p id="itemTitle">Items</p>
+    <p id="statTitles">Str:<br>Dex:<br>Con:<br>Int:<br>Cha:</p>
+    <p id="stats"></p>
+    <p id="xpTitle">exp:</p>
+    <p id="goldTitle">Gold:</p>
+    <p id="healthTitle">Health:</p>
+    <p id="healthPotionsTitle"> Health Potions: </p>
+    <p id="healthPotions"></p>
+    <div id="strButton" class="statButton" onclick="statUp(0)">+</div>
+  <div id="dexButton" class="statButton" onclick="statUp(1)">+</div>
+  <div id="conButton" class="statButton" onclick="statUp(2)">+</div>
+  <div id="intButton" class="statButton" onclick="statUp(3)">+</div>
+  <div id="chaButton" class="statButton" onclick="statUp(4)">+</div>
+  </div>
+  <div id="controls" class="sidebars"> 
+  </div>
+  <input id="input"></input>
+  </div>
+  <script src="mainJS.js"></script>
+</body>
+</div>

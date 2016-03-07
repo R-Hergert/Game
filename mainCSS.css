@@ -1,0 +1,395 @@
+html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+/*-----------interface-----------*/
+
+body {background-color:black}
+
+#main {color:white;
+       border-style:solid;
+       border-width:1px;
+       margin-left:10px;
+       margin-top:30px;
+       width:1000px;
+       height:700px;
+       position: absolute;
+}
+
+#title {font-size:20px;
+        position:absolute;
+        margin-left: 435px
+}
+
+#inventory  {margin-left:10px;
+             position:absolute;
+             background-color:grey;
+             width:250px;
+             height:590px;
+             margin-top:100px;
+}
+
+#controls { margin-left:265px;
+            position:absolute;
+            background-color:grey;
+            width:730px;
+            height:190px;
+            margin-top:500px;}
+
+#input   {position:absolute;
+          margin-top:465px;
+          margin-left:265px;
+          width:730px;
+          height:25px;
+          background-color:black;
+          border-style:solid;
+          }
+
+/*------------Buttons---------------------*/
+
+#left   {border-style:solid;
+         border-width:1px;
+         position:absolute;
+         width:60px;
+         height:40px;
+         margin-left:30px;
+         margin-top:60px;
+         text-align:center;
+         font-size:25px
+}
+
+#up     {border-style:solid;
+         border-width:1px;
+         position:absolute;
+         width:60px;
+         height:40px;
+         margin-left:90px;
+         margin-top:20px;
+         text-align:center;
+         font-size:25px
+}
+
+#right   {border-style:solid;
+         border-width:1px;
+         position:absolute;
+         width:60px;
+         height:40px;
+         margin-left:150px;
+         margin-top:60px;
+         text-align:center;
+         font-size:25px
+}
+
+#down    {border-style:solid;
+         border-width:1px;
+         position:absolute;
+         width:60px;
+         height:40px;
+         margin-left:90px;
+         margin-top:100px;
+         text-align:center;
+         font-size:25px
+}
+
+#attack  {
+         border-style:solid;
+         border-width:1px;
+         position:absolute;
+         width:100px;
+         height:40px;
+         margin-left:90px;
+         margin-top:100px;
+         text-align:center;
+         font-size:25px
+}
+#run {
+         border-style:solid;
+         border-width:1px;
+         position:absolute;
+         width:100px;
+         height:40px;
+         margin-left:200px;
+         margin-top:100px;
+         text-align:center;
+         font-size:25px
+}
+#Heal {
+         border-style:solid;
+         border-width:1px;
+         position:absolute;
+         width:100px;
+         height:40px;
+         margin-left:90px;
+         margin-top:40px;
+         text-align:center;
+         font-size:25px
+}
+#powerhit {
+         border-style:solid;
+         border-width:1px;
+         position:absolute;
+         width:100px;
+         height:40px;
+         margin-left:200px;
+         margin-top:40px;
+         text-align:center;
+         font-size:25px
+}
+
+#shop {
+         border-style:solid;
+         border-width:1px;
+         position:absolute;
+         width:60px;
+         height:40px;
+         margin-left:240px;
+         margin-top:20px;
+         text-align:center;
+         font-size:25px
+}
+
+#healthPotion  {
+         border-style:solid;
+         border-width:1px;
+         position:absolute;
+         width:100px;
+         height:90px;
+         margin-left:120px;
+         margin-top:90px;
+         text-align:center;
+         font-size:25px
+}
+
+#sword {
+         border-style:solid;
+         border-width:1px;
+         position:absolute;
+         width:100px;
+         height:90px;
+         margin-left:10px;
+         margin-top:90px;
+         text-align:center;
+         font-size:25px
+}
+
+#strength {
+         border-style:solid;
+         border-width:1px;
+         position:absolute;
+         width:100px;
+         height:60px;
+         margin-left:340px;
+         margin-top:20px;
+         text-align:center;
+         font-size:25px
+}
+#dexterity {
+         border-style:solid;
+         border-width:1px;
+         position:absolute;
+         width:100px;
+         height:60px;
+         margin-left:340px;
+         margin-top:100px;
+         text-align:center;
+         font-size:25px
+}
+#constitution {
+         border-style:solid;
+         border-width:1px;
+         position:absolute;
+         width:140px;
+         height:60px;
+         margin-left:460px;
+         margin-top:20px;
+         text-align:center;
+         font-size:25px
+}
+#intelligence {
+         border-style:solid;
+         border-width:1px;
+         position:absolute;
+         width:140px;
+         height:60px;
+         margin-left:460px;
+         margin-top:100px;
+         text-align:center;
+         font-size:25px
+}
+#charisma {
+         border-style:solid;
+         border-width:1px;
+         position:absolute;
+         width:100px;
+         height:60px;
+         margin-left:620px;
+         margin-top:60px;
+         text-align:center;
+         font-size:25px
+}
+
+#price {
+         position:absolute;
+         width:100px;
+         height:60px;
+         margin-left:240px;
+         margin-top:70px;
+         text-align:center;
+         font-size:25px
+}
+
+#healingPotion {
+         border-style:solid;
+         border-width:1px;
+         position:absolute;
+         width:100px;
+         height:60px;
+         margin-left:620px;
+         margin-top:115px;
+         text-align:center;
+         font-size:25px
+}
+
+/*-----------------Inventory----------------------*/
+
+#inventoryTitle  {position:absolute;
+                  font-size:20px;
+                  text-align:center;
+                  width:250px}
+
+#statTitles      {position:absolute;
+                  font-size:17px;
+                  color:black;
+                  text-align:right;
+                  margin-top:60px;
+                  margin-left:14px;
+}
+
+#itemTitle       {position:absolute;
+                  font-size:20px;
+                  text-align:center;
+                  width:250px;
+                  margin-top:400px;}
+
+#stats {
+  position:absolute;
+  margin-top:60px;
+  margin-left:55px;
+  font-size:17px;
+}
+
+#levelTitle{
+  color:black;
+  position:absolute;
+  margin-left:5px;
+  font-size:17px;
+  margin-top:45px;
+}
+#level{
+  position:absolute;
+  margin-top:45px;
+  margin-left:55px;
+}
+
+#xpTitle{
+  position:absolute;
+  color:black;
+  margin-top:28px;
+  margin-left:85px;
+}
+
+#xp{
+  position:absolute;
+  margin-left:120px;
+  margin-top:28px;
+}
+#gold {
+  position:absolute;
+  margin-left:200px;
+  margin-top:405px;
+}
+
+#goldTitle{
+  position:absolute;
+  color:black;
+  Margin-left:160px;
+  margin-top:405px;
+}
+
+#health {
+  position:absolute;
+  margin-left:160px;
+  margin-top:48px;
+}
+
+#healthTitle{
+  position:absolute;
+  color:black;
+  Margin-left:160px;
+  margin-top:28px;
+}
+
+.statButton{
+  position:absolute;
+  width:13px;
+  height:13px;
+  border:1px;
+  border-style:solid;
+  border-color:grey;
+  color:grey;
+  text-align:center;
+  margin-left:70px;
+}
+
+#healthPotionsTitle {
+  position:absolute;
+  color:black;
+  margin-top: 200px;
+  margin-left: 10px;
+}
+
+#healthPotions {
+  position:absolute;
+  margin-top: 220px;
+  margin-left: 10px;
+}
+
+#strButton{
+  margin-top:60px
+}
+#dexButton{
+  margin-top:80px
+}
+#conButton{
+  margin-top:100px
+}
+#intButton{
+  margin-top:120px
+}
+#chaButton{
+  margin-top:140px
+}
+
+#textBox {
+  position:absolute;
+  border-color:white;
+  border-style:solid;
+  border-width:1px;
+  width:730px;
+  height:363px;
+  margin-left: 265px;
+  margin-top:100px;
+}
+
+.message {position:absolute;
+          width:720px;
+          margin-left:270px;
+          font-size:12px;
+          height:85px;
+          text-align:center;
+          }
+#message1 {margin-top:105px;}
+#message2 {margin-top:190px;}
+#message3 {margin-top:275px;}
+#message4 {margin-top:360px;}
